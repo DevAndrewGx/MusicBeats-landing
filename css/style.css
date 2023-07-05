@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+:root {
+    --primary-color: #1f1f1f;
+    --black: #0c0c0c;
+    --yellow: #ffc401;
+    --gray-dark: #19191b;
+    --gray-medium: #252527;
+    --gray-light: #363639;
+    --primary-random-color: #040404;
+    --secundary-random-color: #121214;
+
+    --primary-color: #121214;
+    --secundar-color: #040404;
+    --third-color: #ffc500;
+    --forth-color: #313131;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* -----------------------------------------------------------------------------
+------------------- ESTILOS PARA EL HEADER ------------------------------------
+---------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    position: relative;
+    background: var(--secundary-random-color);
+    padding: 0 0 200px;
+}
+
+header nav.navbar {
+    position: fixed !important;
+    width: 100%;
+    background: var(--primary-random-color);
+    top: 40px;
+    z-index: 999;
+    padding: 20px 0;
+}
+
+header nav .navbar-nav li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+header nav .navbar-nav li a:hover {
+    color: var(--yellow)
+}
+
+header #hero {
+    width: 100%;
+    position: relative;
+    padding-top: 230px;
+}
+
+header #hero h2 {
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 100px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+header #hero h1 {
+    color: #fff;
+    font-size: 75px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+header #hero button {
+    background-color: var(--yellow);
+    color: #fff;
+    padding: 10px 34px;
+    border: none;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header #hero .img-hero {
+    position: relative;
+}
+
+#hero .img-hero img {
+    position: absolute;
+    z-index: 0;
+    right: 60px;
+    width: 880px
+}
+
+/* -----------------------------------------------------------------------------
+------------------- ESTILOS PARA EL MAIN PRIMERA PARTE ---------------------------------
+-------------------------------------------------------------------------------*/
+main {
+    width: 100%;
+    position: relative;
+}
+
+#section-albunes {
+    width: 100%;
+    background: var(--forth-color);
+    padding: 25px 0;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.container-cards-alb {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#section-albunes .container-cards-alb h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#section-albunes .container-cards-alb h2 b {
+    color: var(--third-color);
+    font-weight: 300;
+}
+
+
+.container-cards-alb article.card-albumn {
+    position: relative;
+    margin: 0 auto;
+    max-width: 235px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.container-cards-alb .card-albumn img {
+    position: relative;
+}
+
+#section-albunes article.card-albumn .img-big img {
+    width: 100%;
+}
+
+
+#section-albunes .card-albumn .info-album img {
+    margin-bottom: 10px;
+}
+
+#section-albunes .card-albumn .info-album h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+
+#section-albunes .card-albumn p {
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+}
+
+
+
+#section-albunes .card-albumn .info-album {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    background-color: #ffc40072;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+#section-albunes .card-albumn:hover .info-album {
+    opacity: 1;
+}
+
+#section-albunes .container-cards-alb button {
+    padding: 15px 75px;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--third-color);
+    border: none;
+    color: #fff;
+}
+
+
+
+/* STYLES FOR SECTION HORARIO */
+
+#section-horario {
+    width: 100%;
+    background: var(--secundar-color);
+    padding: 25px 0 60px;
+}
+
+#section-horario h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 30px 0 50px 0;
+}
+
+#section-horario h2 b {
+    color: var(--third-color);
+    font-weight: 500;
+}
+
+
+
+
+#section-horario .border-card {
+    max-width: 230px;
+    background: #202022;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#section-horario .card-horario {
+    border: 2px solid #636366;
+    transition: .4s;
+}
+
+
+#section-horario .card-horario h2 {
+    color: #fff;
+    padding-top: 45px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+#section-horario .card-horario h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    transition: .4s;
+}
+
+#section-horario .card-horario p {
+    background: #333336;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 45px;
+    transition: .3s;
+}
+
+#section-horario .card-horario button {
+    background: var(--third-color);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 25px;
+    transition: .4s ease-in-out;
+}
+
+#section-horario .border-card:hover {
+    background: #fff;
+}
+
+#section-horario .border-card:hover p {
+    background: #fff;
+}
+
+#section-horario .border-card:hover p,
+#section-horario .border-card:hover h2,
+#section-horario .border-card:hover h3 {
+    color: #000;
+}
+
+#section-horario .border-card:hover button {
+    background: #000;
+    color: var(--third-color);
+}
+
+#section-horario .border-card:hover .card-horario {
+    border: 2px solid var(--third-color);
+}
+
+
+/* SYLES FOR SECTION GALLERY */
+
+
+#section-galleria {
+    width: 100%;
+    position: relative;
+    background: #333336;
+    padding: 50px 0;
+}
+
+#section-galleria h2 {
+    color: #fff;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+#section-galleria h2 b {
+    color: var(--yellow);
+    font-weight: 300;
+}
+
+
+/* #section-galleria .carrousel-gallery .carousel-control-prev-icon, */
+#section-galleria .carousel .buttons-slide {
+    width: 6%;
+    opacity: 1;
+}
+
+
+#section-galleria .carousel .buttons-slide span {
+
+    height: 4rem;
+    width: 4rem;
+    /* background: #666666ed; */
+    padding: 85px 0;
+    margin-right: 5px;
+    background-color: #303032;
+    transition: .4s ease;
+
+}
+
+#section-galleria .carousel .buttons-slide .carousel-control-prev-icon {
+    margin-left: 5px;
+}
+
+#section-galleria .carousel .buttons-slide:hover span {
+    background-color: var(--yellow);
+    transform: scale(0.9);
+}
+
+
+/* STYLES FOR SECTION EVENTS */
+
+
+#section-events {
+    width: 100%;
+    position: relative;
+    background: var(--secundar-color);
+    padding: 60px 0 60px;
+    text-align: center;
+}
+
+#section-events h2 {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+
+#section-events h2 b {
+    color: var(--yellow);
+}
+
+
+#section-events .date-event {
+    width: 100%;
+    background: var(--yellow);
+    text-align: center;
+    padding: 18px 0;
+    margin-left: 15px;
+}
+
+#section-events .date-event p {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+#section-events .event-information {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    background: #202022;
+    text-align: left;
+    padding: 30px;
+
+}
+
+
+#section-events .event-information h2 {
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+#section-events .event-information h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+#section-events .event-information p {
+    color: #fff;
+}
+
+#section-events .events {
+    padding-left: 0;
+}
+
+#section-events .container-ev-information {
+    position: relative;
+}
+
+#section-events .container-button {
+    padding-left: 0;
+    position: relative;
+}
+
+#section-events .button-details {
+    text-align: left;
+    position: absolute;
+    left: -30px;
+    background: #202022;
+    padding-top: 31%;
+    padding-bottom: 27%;
+    padding-right: 50px;
+}
+
+#section-events .button-details button {
+    cursor: pointer;
+    padding: 10px 35px;
+    margin-left: 40px;
+    background: var(--yellow);
+    color: #fff;
+    border: none;
+}
+
+#section-events .container .info-event2 {
+    padding-top: 40px;
+}
+
+/* STYLES FOR SECTION LASTES-ALBUMNS */
+
+#section-lastest-albumn {
+    width: 100%;
+    position: relative;
+    background-image: url("../MEDIOS-FRONT-END/multimedia/baterista.jpg");
+    text-align: center;
+    padding: 50px 0 100px;
+    background-size: cover;
+}
+
+#section-lastest-albumn h2 {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+
+#section-lastest-albumn h2 b {
+    color: var(--yellow);
+}
+
+#section-lastest-albumn .card-lastAlbumn img {
+    padding-left: 45px;
+}
+
+#section-lastest-albumn .card-lastAlbumn .info-card-last {
+    background: #fff;
+    padding-bottom: 10px;
+    width: 225px;
+    margin-left: 46px;
+}
+
+
+#section-lastest-albumn .card-lastAlbumn .info-card-last p {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#section-lastest-albumn .card-lastAlbumn .info-card-last h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#section-lastest-albumn .card-lastAlbumn .info-card-last button {
+    padding: 3px 45px;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    background: var(--yellow);
+    border: none;
+
+}
+
+#section-lastest-albumn .card-lastAlbumn .info-card-last button img {
+    text-align: left;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
+
+
+/* STYLES FOR SLIDER */
+slick-slide img {
+    display: block;
+    padding-left: 45px;
+}
+
+.slick-next {
+    width: 35px;
+    height: 35px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    background: white url("../MEDIOS-FRONT-END/multimedia/right-arrow.png") no-repeat;
+    background-size: 100%;
+    bottom: -70px;
+    left: 50%;
+
+}
+
+.slick-prev {
+    width: 35px;
+    height: 35px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    bottom: -70px;
+    left: 45%;
+    background: white url("../MEDIOS-FRONT-END/multimedia/right-arrow.png") no-repeat;
+    transform: rotate(180deg);
+    background-size: 100%;
+}
+
+
+/* STYLES FOR SECTION RECENT-VIDEO */
+
+#section-recent-video {
+    background: #333336;
+    width: 100%;
+    padding: 80px 0 60px;
+    position: relative;
+}
+
+#section-recent-video h2 {
+    color: #fff;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+#section-recent-video h2 b {
+    color: var(--yellow);
+}
+
+
+#section-recent-video .gallery-img {
+    position: relative;
+}
+
+#section-recent-video .gallery-img .img-play {
+    position: absolute;
+    top: 120px;
+    left: 40%;
+    right: 40%;
+}
+
+/* STYLES FOR MODAL */
+
+.modal {
+    background: #221039e8;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+
+
+.modal.active { 
+    display: block;
+}
+
+
+/* STYLES FOR FOOTER */
+
+
+footer { 
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+    background: #121214;
+}
+
+footer h2 { 
+    color: var(--yellow);
+    margin-bottom: 20px;
+}
+
+footer form .button-form {
+    background: #333336;
+    font-size: 25px;
+    
+    border: none;
+    color: #fff;
+    padding: 3px 30px 3px 10px;
+    margin-right: 15px;
+}
+
+
+
+
+footer form button { 
+    position: absolute;
+    background: transparent;
+    border: 3px solid var(--yellow);
+    padding: 6px;
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+footer .logos-imgs a {
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #999;
+    padding: 10px;
+    margin-right: 10px;
+} 
+footer .logos-imgs {
+    margin-top: 9px;
+}
+
+footer .logos-imgs a img {
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #999;
+    text-align: right;
+    padding-right: 200px;
+    padding-top: 15px;
+   
+}
